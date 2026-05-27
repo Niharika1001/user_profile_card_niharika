@@ -13,29 +13,18 @@ function UserProfile(props) {
       );
 
     if(details.style.display === "none") {
-
       details.style.display = "block";
-
       button.innerText = "Show Less";
-
     } else {
-
       details.style.display = "none";
-
       button.innerText = "Show More";
     }
   }
 
   return (
 
-    <div
-      className="profile-card"
-
-      id={"user-" + props.id}
-    >
-
-      <h2>{props.name}</h2>
-
+    <div className="profile-card"id={"user-" + props.id}>
+     <h2>{props.name}</h2>
       <p>
         <strong>Job:</strong>
         {props.jobTitle}
@@ -46,12 +35,7 @@ function UserProfile(props) {
         {props.company}
       </p>
 
-      <div
-        id={"details-" + props.id}
-
-        style={{display:"none"}}
-      >
-
+      <div id={"details-" + props.id} style={{display:"none"}}>
         <p>
           <strong>Email:</strong>
           {props.email}
@@ -64,21 +48,11 @@ function UserProfile(props) {
 
       </div>
 
-      <button
-        id={"toggle-" + props.id}
-
-        onClick={() =>
-          handleToggle(props.id)
-        }
-      >
+      <button id={"toggle-" + props.id} onClick={() =>handleToggle(props.id)}>
         Show More
       </button>
 
-      <button
-        onClick={() =>
-          props.onDelete(props.id)
-        }
-      >
+      <button onClick={() =>props.onDelete(props.id)}>
         Delete
       </button>
 
