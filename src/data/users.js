@@ -11,19 +11,19 @@ const users = [
 
   {
     id: 2,
-    name: "Rahul",
+    name: "Praveena",
     jobTitle: "Backend Developer",
     company: "Microsoft",
-    email: "rahul@gmail.com",
+    email: "praveena@gmail.com",
     phone: "9876501234"
   },
 
   {
     id: 3,
-    name: "Sneha",
+    name: "harsha",
     jobTitle: "UI Designer",
     company: "Adobe",
-    email: "sneha@gmail.com",
+    email: "harsha@gmail.com",
     phone: "9999999999"
   },
 

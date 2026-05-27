@@ -32,10 +32,6 @@
   transition: 0.3s;
 }
 
-.profile-card:hover{
-
-  transform: scale(1.03);
-}
 
 .profile-card button{
 
